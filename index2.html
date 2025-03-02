@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="w-11/12 mx-auto mt-5 bg-[#F4F7FF] rounded-lg mb-10 p-5  ">
+    <header>
+        <nav class="bg-white p-4 border rounded-lg  ">
+            <div class="flex justify-between">
+                <div class="flex gap-2 items-center">
+                    <img src="./assets/logo.png" alt="">
+                    Dev<span class="font-bold">Board</span>
+                </div>
+                <div>
+                    <!-- <button class=""> </button> -->
+                    <a class="btn btn-primary text-xl" href="http://127.0.0.1:5500/index.html"> Back to home <i
+                            class="fa-solid fa-house"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="flex justify-center">
+            <h1 class="mt-5 text-3xl font-bold mb-5 ">blogs</h1>
+        </div>
+
+        <!-- questions section -->
+
+        <!-- question-01 -->
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-4">
+            <div class="collapse-title font-semibold text-xl">Question-1: What are the different ways to select an element in the
+                DOM?</div>
+            <div class="collapse-content text-sm">
+                Ans:Use document.getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll, or getElementsByName to select DOM elements. 
+            </div>
+        </div>
+        <!-- question-02 -->
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-4">
+            <div class="collapse-title font-semibold text-xl">Question-2: What is the difference between innerHTML, innerText, and
+                textContent ?</div>
+            <div class="collapse-content text-sm">
+                Ans: innerHTML handles HTML content, innerText gets only visible text, and textContent retrieves all text, including hidden, as plain text. 
+            </div>
+        </div>
+        <!-- question-03 -->
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-4">
+            <div class="collapse-title font-semibold text-xl">Question-3: What is event delegation in the DOM?</div>
+            <div class="collapse-content text-sm">
+                Ans:Event Delegation allows a parent element to handle events for its children using event bubbling. Instead of adding listeners to each child, you add one to the parent.
+            </div>
+        </div>
+        <!-- question-04 -->
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-4">
+            <div class="collapse-title font-semibold text-xl">Question-4: What is event bubbling in the DOM?
+
+            </div>
+            <div class="collapse-content text-sm">
+                Ans:Event Bubbling is when an event starts from the target element and propagates up to its ancestors in the DOM.
+            </div>
+        </div>
+        <!-- question-05 -->
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mb-4">
+            <div class="collapse-title font-semibold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="collapse-content text-sm">
+                Create with document.createElement(), add with appendChild(), and remove with remove() or removeChild(). 
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
