@@ -12,7 +12,7 @@ let count1 = 23;
 let count2 = 6;
 
 
-for (var i = 0; i < buttons.length; i++) {
+   for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function (event) {
         let clickedButton = event.target;
         clickedButton.disabled = true;
@@ -22,12 +22,12 @@ for (var i = 0; i < buttons.length; i++) {
         document.getElementById("counter1").textContent = count1;
         document.getElementById("counter2").textContent = count2;
 
-        alert("You have completed your task");
+           alert("You have completed your task");
 
-        if (count2 === 0) {
-        alert("Congratulations! You have completed your task!");
+           if (count2 === 0) {
+            alert("Congratulations!!! You have completed your task!");
         }
-    });
+      });
 }
 
 let cardButtons = document.querySelectorAll('.card-btn-full');
@@ -35,12 +35,14 @@ let activity = document.getElementById('activity_log_text');
 
 function getDate() {
     let today = new Date();
-    let day = today.getDate();
-    let month = today.getMonth() + 1;
-    let year = today.getFullYear();
+    let hours = today.getHours();
+    let amPm = hours >= 12 ? 'PM' : 'AM';
+    let minutes = today.getMinutes();
+    let seconds = today.getSeconds();
 
 
-    return year + '/' + month + '/' + day;
+
+    return hours + ':' + minutes + ':' + seconds + ' ' + amPm;
 }
 
 for (let i = 0; i < cardButtons.length; i++) {
@@ -60,3 +62,17 @@ for (let i = 0; i < cardButtons.length; i++) {
 document.getElementById('clear_button').addEventListener('click', function () {
     activity.innerHTML = "";
 });
+
+
+// date update 
+
+function dateUpdate() {
+    let today = new Date()
+    let day = today.getDate();
+    let month = today.getMonth();
+    let month1=month+1;
+    let year = today.getFullYear();
+    return day + "-" + month1 + "-" + year
+}
+
+document.getElementById('date_update').textContent = dateUpdate();
